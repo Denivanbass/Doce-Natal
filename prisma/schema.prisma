@@ -7,37 +7,6 @@ datasource db {
   provider = "mysql"
 }
 
-model services {
-  id           Int       @id @default(autoincrement())
-  user_id      Int
-  service_name String    @db.VarChar(150)
-  description  String?   @db.Text
-  price        Decimal?  @db.Decimal(10, 2)
-  created_at   DateTime  @default(now()) @db.DateTime(0)
-  updated_at   DateTime? @db.DateTime(0)
-
-  @@index([user_id], map: "fk_services_users")
-}
-
-model users {
-  id                Int       @id @default(autoincrement())
-  name              String    @db.VarChar(150)
-  email             String    @unique(map: "email") @db.VarChar(150)
-  password_hash     String    @db.VarChar(255)
-  contact           String?   @db.VarChar(20)
-  professional_name String?   @db.VarChar(150)
-  category          String?   @db.VarChar(100)
-  description       String?   @db.Text
-  experience        String?   @db.VarChar(30)
-  photo_url         String?   @db.VarChar(500)
-  website           String?   @db.VarChar(255)
-  city              String?   @db.VarChar(100)
-  country           String?   @db.Char(2)
-  created_at        DateTime  @default(now()) @db.DateTime(0)
-  updated_at        DateTime? @db.DateTime(0)
-  role              String    @default("USER") @db.VarChar(50)
-}
-
 model products {
   id                Int       @id @default(autoincrement())
   name              String    @db.VarChar(150)

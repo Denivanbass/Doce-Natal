@@ -14,7 +14,7 @@ export async function createProductAction(formData: FormData) {
     const price = parseFloat(formData.get('price') as string);
     const weight = formData.get('weight') as string;
     const tag = formData.get('tag') as string | null;
-    
+
     const imageUrl = formData.get('imageUrl') as string;
     const imageFile = formData.get('imageFile') as File | null;
 
@@ -26,13 +26,13 @@ export async function createProductAction(formData: FormData) {
 
       const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1e9);
       const filename = `${uniqueSuffix}-${imageFile.name.replace(/\s/g, '_')}`;
-      
+
       // Aponta diretamente para a pasta 'uploads' na raiz do projeto (process.cwd())
       const uploadDir = path.join(process.cwd(), 'uploads');
-      
+
       // Cria a pasta automaticamente se ela não existir
       await mkdir(uploadDir, { recursive: true });
-      
+
       const filepath = path.join(uploadDir, filename);
       await writeFile(filepath, buffer);
 
