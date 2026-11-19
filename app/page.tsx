@@ -7,6 +7,7 @@ import {
   MessageCircle,
   Clock,
   Award,
+  Phone,
 } from 'lucide-react';
 import { connection } from 'next/server';
 import CartDrawer from '@/_components/CartDrawer';
@@ -94,6 +95,19 @@ export default async function NatalConfeitariaPage() {
           </h2>
           <p className="text-[#2C1E16]/75 text-sm sm:text-base">
             Escolha os clássicos que não podem faltar na sua mesa.
+          </p>
+        </div>
+
+        {/* Alerta de Instrução de Pedido via WhatsApp */}
+        <div
+          role="alert"
+          className="max-w-3xl mx-auto mb-10 bg-[#1E4D3B]/10 border border-[#1E4D3B]/30 text-[#2C1E16] rounded-xl px-4 py-3.5 flex items-start sm:items-center gap-3 shadow-sm"
+        >
+          <MessageCircle className="w-5 h-5 text-[#1E4D3B] shrink-0 mt-0.5 sm:mt-0" />
+          <p className="text-xs sm:text-sm leading-relaxed">
+            <strong className="font-semibold text-[#1E4D3B]">Como encomendar:</strong>{' '}
+            Selecione as sobremesas desejadas na vitrine e finalize o seu pedido enviando pelo{' '}
+            <strong className="font-semibold">WhatsApp</strong>.
           </p>
         </div>
 
@@ -263,7 +277,7 @@ export default async function NatalConfeitariaPage() {
                   </h3>
 
                   <p className="text-xs text-[#2C1E16]/70 mt-2 leading-relaxed">
-                    Seg a Sáb, das 09h às 19h • Entregas agendadas até 24/12
+                    Seg a Sáb, das 09h às 19h • Entregas agendadas no Grande ABC até 24/12
                   </p>
                 </div>
 
@@ -299,6 +313,16 @@ export default async function NatalConfeitariaPage() {
         </div>
       </section>
 
+      {/* Botão Flutuante do WhatsApp */}
+      <a
+        href="https://wa.me/5511989585389"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Falar no WhatsApp"
+        className="fixed bottom-6 right-6 md:right-8 z-40 bg-[#25D366] hover:bg-[#20BA5A] text-white p-4 rounded-full border border-white shadow-lg hover:shadow-xl transition-all hover:scale-105 flex items-center justify-center"
+      >
+        <Phone className="w-10 h-10" />
+      </a>
 
       <CartDrawer />
     </div>
