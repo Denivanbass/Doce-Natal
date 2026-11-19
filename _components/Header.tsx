@@ -1,12 +1,8 @@
-import { Clock, LogIn } from "lucide-react";
+import { Clock} from "lucide-react";
 
 import Link from "next/link";
 import LogoLoja from "./LogoLoja";
 import ButtonCart from "./ButtonCart";
-import { cookies } from "next/headers";
-import { Suspense } from "react";
-import { logout } from "@/app/(backend)/_actions/logout";
-import { login } from "@/app/(backend)/_actions/login";
 
 
 export default async function Header() {
