@@ -6,7 +6,6 @@ import {
   MapPin,
   MessageCircle,
   Clock,
-  Phone,
   Award,
 } from 'lucide-react';
 import { connection } from 'next/server';
@@ -37,13 +36,13 @@ export default async function NatalConfeitariaPage() {
         className="relative bg-[#2C1E16] text-[#FDFBF7] overflow-hidden"
       >
         <div
-          className="absolute inset-0 bg-center opacity-90"
+          className="absolute inset-0 bg-center "
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1740385549630-4e31b8019fec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')",
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#2C1E16] via-[#2C1E16]/90 to-[#2C1E16]/50" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1b0e11] via-[#1b0e11]/50 to-[#1b0e11]/10" />
 
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 grid md:grid-cols-12 gap-10 items-center">
           <div className="md:col-span-7 space-y-6">
@@ -52,7 +51,7 @@ export default async function NatalConfeitariaPage() {
                 Edição 2026
               </span>
               <span className="text-[#FDFBF7]/90">
-                Encomendas de Natal Abertas!
+                Encomendas Abertas!
               </span>
             </div>
 
@@ -62,9 +61,8 @@ export default async function NatalConfeitariaPage() {
             </h1>
 
             <p className="text-base sm:text-lg text-[#FDFBF7]/85 max-w-xl leading-relaxed">
-              Sobremesas artesanais preparadas com ingredientes nobres,
-              chocolate belga e receitas tradicionais para encantar sua família
-              na noite de Natal.
+              Sobremesas artesanais feitas com ingredientes selecionados, das frutas ao
+              chocolate, com receitas tradicionais e deliciosas para a noite de Natal da sua família.
             </p>
 
             <div className="flex flex-wrap items-center gap-4 pt-2">
@@ -210,7 +208,7 @@ export default async function NatalConfeitariaPage() {
             <div className="space-y-3">
 
               <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#C59B27]">
-                Nossa História 
+                Nossa História
               </span>
 
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-[#8B1E24] leading-tight">
@@ -284,7 +282,7 @@ export default async function NatalConfeitariaPage() {
               </a>
 
               <a
-              
+
                 href="https://wa.me/5511989585389"
                 target="_blank"
                 rel="noopener noreferrer"

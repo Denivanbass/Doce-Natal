@@ -1,4 +1,4 @@
-import { Clock} from "lucide-react";
+import { Clock } from "lucide-react";
 
 import Link from "next/link";
 import LogoLoja from "./LogoLoja";
