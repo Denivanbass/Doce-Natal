@@ -36,7 +36,7 @@ export default async function NatalConfeitariaPage() {
         className="relative bg-[#2C1E16] text-[#FDFBF7] overflow-hidden"
       >
         <div
-          className="absolute inset-0 bg-center "
+          className="absolute inset-0 bg-cover bg-[center_75%]"
           style={{
             backgroundImage:
               "url('https://images.unsplash.com/photo-1740385549630-4e31b8019fec?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D')",
