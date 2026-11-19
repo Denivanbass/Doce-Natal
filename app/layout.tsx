@@ -25,7 +25,7 @@ const poppins = Poppins({
 });
 
 // Substitua pela URL oficial do seu site em produção
-const SITE_URL = process.env.URL as string;
+const SITE_URL = 'https://loyal-khaki-locust-87.hostingersite.com/';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

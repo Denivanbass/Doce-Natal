@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = process.env.URL as string;;
+    const baseUrl = 'https://loyal-khaki-locust-87.hostingersite.com/'
 
     return [
         {
