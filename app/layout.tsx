@@ -14,7 +14,7 @@ const roboto = Roboto({ variable: "--font-roboto", subsets: ["latin"], weight: [
 const poppins = Poppins({ variable: '--font-pop', weight: ["400", "500", "600", "700"], subsets: ["latin", "latin-ext"], style: ["normal", "italic"] })
 
 export const metadata: Metadata = {
-  title: "Catálogo de Natal",
+  title: "Catálogo - Doce Natal ",
   description: "Catálogo de sobremesas artesanais de Natal.",
 };
 

@@ -5,14 +5,14 @@ export default function Footer() {
     return (
         <footer
             id="contato"
-            className="bg-[#2C1E16] text-[#FDFBF7]/80 border-t-4 border-[#8B1E24]"
+            className=" w-full bg-[#2C1E16] text-[#FDFBF7]/80 border-t-4 border-[#8B1E24] "
         >
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 grid sm:grid-cols-3 gap-8 items-center">
+            <div className="max-w-6xl m-auto p-4   flex flex-col items-center justify-center gap-5 md:flex-row  md:justify-between  ">
                 <div>
-                    <span className="font-serif text-2xl font-bold text-[#FDFBF7] block">
+                    <span className="font-serif text-2xl font-bold text-[#FDFBF7] flex justify-center md:block">
                         DOCE NATAL
                     </span>
-                    <span className="text-xs text-[#C59B27] uppercase">
+                    <span className="text-xs text-[#C59B27] uppercase flex justify-center md:block">
                         Sobremesas Festivas
                     </span>
                     <p className="text-xs text-[#FDFBF7]/60 mt-3">
@@ -33,16 +33,16 @@ export default function Footer() {
 
                 </div>
 
-                <div className="sm:text-right space-y-2">
-                    <span className="text-xs uppercase tracking-wider text-[#FDFBF7]/60 block">
-                        Formas de Pagamento
+                <div className=" flex justify-center items-center gap-2">
+                    <span className="text-xs uppercase tracking-wider text-[#FDFBF7]/60 flex flex-nowrap">
+                        Formas de Pagamento:
                     </span>
-                    <div className="inline-flex flex-wrap gap-2 text-xs font-semibold">
+                    <div className="flex  gap-2 text-xs font-semibold ">
                         <span className="bg-[#FDFBF7]/10 px-2.5 py-1 rounded text-[#FDFBF7]">
-                            PIX (5% OFF)
+                            PIX 
                         </span>
                         <span className="bg-[#FDFBF7]/10 px-2.5 py-1 rounded text-[#FDFBF7]">
-                            Cartão de Crédito
+                            DINHEIRO
                         </span>
                     </div>
                 </div>
