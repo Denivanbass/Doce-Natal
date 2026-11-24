@@ -10,7 +10,7 @@ interface ProductCardProps {
   product: {
     id: number;
     name: string;
-    smallDescription?: string | null;
+    small_description?: string | null;
     description: string;
     price: number | any;
     weight: string;
@@ -49,8 +49,8 @@ export default function ProductCard({ product }: ProductCardProps) {
             <h3 className="font-serif text-xl font-bold text-[#2C1E16] group-hover:text-[#8B1E24] transition-colors">
               {product.name}
             </h3>
-            <p className="text-sm text-[#2C1E16]/75 leading-relaxed">
-              {product.description}
+            <p className="text-sm text-[#2C1E16]/75 leading-relaxed ">
+              {product.small_description}
             </p>
           </Link>
         </div>
@@ -70,7 +70,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               addItem({
                 id: product.id,
                 name: product.name,
-                small_description: product.smallDescription || '',
+                small_description: product.small_description || '',
                 description: product.description,
                 price: numericPrice,
                 weight: product.weight,

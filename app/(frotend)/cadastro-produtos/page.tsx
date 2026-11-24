@@ -397,7 +397,7 @@ export default function NovoProdutoPage() {
                     {formData.name || 'Nome da Sobremesa'}
                   </h3>
                   <p className="text-sm text-[#2C1E16]/75 leading-relaxed">
-                    {formData.description ||
+                    {formData.small_description ||
                       'A descrição completa da sobremesa aparecerá aqui exatamente como o cliente verá na vitrine.'}
                   </p>
                 </div>
