@@ -114,7 +114,7 @@ export default async function NatalConfeitariaPage() {
         {products.length === 0 ? (
           <div className="text-center py-16 bg-white rounded-2xl border border-[#2C1E16]/10 shadow-sm max-w-xl mx-auto space-y-3">
             <p className="text-[#2C1E16]/75 text-base font-medium">
-              Nenhuma sobremesa cadastrada no banco de dados.
+              Nenhuma sobremesa encontrada.
             </p>
             <p className="text-xs text-[#2C1E16]/50">
               Cadastre novos produtos na sua página de administração para vê-los aqui na vitrine.
