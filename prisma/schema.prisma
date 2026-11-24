@@ -10,7 +10,7 @@ datasource db {
 model products {
   id                Int       @id @default(autoincrement())
   name              String    @db.VarChar(150)
-  small_description String?    @db.VarChar(255)
+  small_description String    @db.VarChar(255)
   description       String    @db.Text
   price             Decimal   @db.Decimal(10, 2)
   weight            String    @db.VarChar(50)
