@@ -10,7 +10,7 @@ interface ProductCardProps {
   product: {
     id: number;
     name: string;
-    small_description?: string | null;
+    small_description: string | null;
     description: string;
     price: number | any;
     weight: string;
